@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravidade X Planeta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="formulario">
+            <h3>Peso nos Planetas</h3>
+            <select name="planeta" id="planeta">
+                <option value="0" default>Selecione um planeta</option>
+                <option value="0.37">Mercúrio</option>
+                <option value="0.88">Vênus</option>
+                <option value="0.38">Marte</option>
+                <option value="2.64">Júpiter</option>
+                <option value="1.15">Saturno</option>
+                <option value="1.17">Urano</option>
+            </select>
+            <input type="text" name="peso" id="peso" placeholder="Peso">
+            <div class="botoes">
+                <button onclick="calcular()" class="calcular">Calcular</button>
+                <button onclick="cancelar()" class="cancelar">Cancelar</button>
+            </div>
+            <p class="resultado"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
